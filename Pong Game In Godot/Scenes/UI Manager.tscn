@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://bf1dx8n0pdsvj"]
+
+[ext_resource type="Script" path="res://Scripts/UI Manager.gd" id="1_qur46"]
+
+[node name="UI Manager" type="CanvasLayer"]
+script = ExtResource("1_qur46")
+
+[node name="Player Label" type="Label" parent="."]
+offset_left = 173.0
+offset_top = 106.0
+offset_right = 213.0
+offset_bottom = 129.0
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy Label" type="Label" parent="."]
+offset_left = 938.0
+offset_top = 106.0
+offset_right = 978.0
+offset_bottom = 129.0
+theme_override_font_sizes/font_size = 30
+text = "0
+"
+horizontal_alignment = 1
+vertical_alignment = 1

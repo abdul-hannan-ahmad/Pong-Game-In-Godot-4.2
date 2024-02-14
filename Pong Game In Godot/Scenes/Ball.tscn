@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1a8xnarnbg3a"]
+
+[ext_resource type="Script" path="res://Scripts/Ball.gd" id="1_l1bod"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_0hu8l"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pi3wm"]
+radius = 25.0
+
+[node name="Ball" type="CharacterBody2D" groups=["ball"]]
+modulate = Color(0.541176, 1, 1, 1)
+script = ExtResource("1_l1bod")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+scale = Vector2(50, 50)
+mesh = SubResource("SphereMesh_0hu8l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_pi3wm")
